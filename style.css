@@ -50,7 +50,7 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 2% 2% 2% 2%;
+    padding: 2% 2% 6% 2%;
     background-color: var(--main-color);
 }
 .about-container img{
@@ -71,25 +71,107 @@ header{
 /* projects */
 
 .title{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px 0px 0px 30px;
     border-bottom: 2px solid var(--main-color);
+    border-top: 2px solid var(--main-color);
 }
-.title .project-name{
+.title .name{
+    padding: 10px 0px 0px 30px;
     font-size: 22px;
     font-weight: 800;
     padding-bottom: 10px;
     margin-right: auto;
     margin: 30px;
 }
-proj-cont{
+.projects{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6%;
+}
+.proj1{
     width: 510px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.proj1-img{
+    width: 300px;
     height: 100%;
-    background-color: #000000;
+    border: 2px solid var(--main-color);
+    float: left;
+}
+.proj1-text h1{
+    font-size: 22px;
+    font-weight: 800;
+}
+.proj1-text h3{
+    font-size: 22px;
+    font-weight: 500;
+}
+.contacts{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2% 0% 0% 6%;
+}
+.links{
+    width: 100%;
+    height: 90px;
+    border: 2px solid var(--main-color);
+    padding: 0em 64em 0em 0em;
+}
+#github{
+    text-decoration: none;
+    color: var(--main-color);
+}
+#linkedin{
+    text-decoration: none;
+    color: var(--main-color);
+}
+#email{
+    text-decoration: none;
+    color: var(--main-color);
 }
 
+#button_link, #button_git, #button_email, #github, #linkedin, #email{
+    transition: all 0.3s ease 0s;
+}
+#email:hover{
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+#github:hover{
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+#linkedin:hover{
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+#button_email:hover{
+    background-color: black;
+    color: var(--secondary-color);
+}
+#button_git:hover{
+    background-color: black;
+    color: var(--secondary-color);
+}
+#button_link:hover{
+    background-color: black;
+    color: var(--secondary-color);
+}
+
+footer{
+    margin-top: 80px;
+    width: 100%;
+    height: 150px;
+    background-color: var(--main-color);
+    text-align: center;
+    padding-top: 75px;
+    color: var(--secondary-color);
+}
 /* projects */
 /* resume page */
 .resume{
