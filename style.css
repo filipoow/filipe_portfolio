@@ -6,6 +6,7 @@
 }
 
 *{
+    font-family: "IBM Plex Mono", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -14,13 +15,11 @@
 
 header .logo{
     color: var(--secondary-color);
-    font-family: "IBM Plex Mono", sans-serif;
     font-size: 22px;
     cursor: pointer;
     margin-right: auto;
 }
 .nav_li, .nav_a{
-    font-family: "IBM Plex Mono", sans-serif;
     font-weight: 500;
     font-size: 18px;
     color: var(--secondary-color);
@@ -58,12 +57,43 @@ header{
     margin-right: auto;
 }
 .about-text{
-    font-family: "IBM Plex Mono", sans-serif;
     color: var(--secondary-color);
 }
 .about-h1{
-    font-size: 26px;
+    font-size: 36px;
 }
 .about-h3{
     font-size: 18px;
 }
+/* projects */
+
+.title{
+    width: 100%;
+    height: 110px;
+    background-color: var(--secondary-color);
+    border-style: solid;
+    border-width: 2px 0px 2px 0px;
+}
+.title .project-name{
+    font-weight: 500;
+    background-color: var(--secondary-color);
+    padding-bottom: 10px;
+    margin-right: auto;
+    margin: 30px;
+}
+.projects{
+    width: 100%;
+    height: 540px;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* projects */
+/* resume page */
+.resume{
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+}
+/* resume page */
